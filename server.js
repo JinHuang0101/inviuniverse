@@ -2,9 +2,11 @@ const express = require("express");
 const storiesRouter = require("./routes/stories");
 const mongoose = require("mongoose");
 const app = express();
-
+/*
 const uri = process.env.MONGODB_URI;
-
+*/
+const uri =
+  "mongodb+srv://universe-test:universe-test@universe-test.c18twrh.mongodb.net/?retryWrites=true&w=majority";
 mongoose.connect(uri);
 
 app.set("view engine", "ejs");
